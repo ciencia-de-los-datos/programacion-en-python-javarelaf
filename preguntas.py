@@ -14,7 +14,7 @@ for fila in reader:
     datos.append(fila)
 
 #Pregunta 1
-def pregunta_01(datos):
+def pregunta_01():
  suma=0
  for fila in datos:
     suma=suma+int(fila[1])
@@ -23,7 +23,7 @@ def pregunta_01(datos):
 pass
 
 #Pregunta_02
-def pregunta_02(datos):
+def pregunta_02():
  datos.sort(key=itemgetter(0),reverse=False)
  letras=list()
  for fila in datos:
@@ -33,7 +33,7 @@ def pregunta_02(datos):
 pass
 
 #pregunta_03 - rapido
-def  pregunta_03(datos):
+def  pregunta_03():
  out=list()
  letras=list()
  for fila in datos:
@@ -53,7 +53,7 @@ def  pregunta_03(datos):
 pass
 
 #pregunta_04
-def pregunta_04(datos):
+def pregunta_04():
  fechas=list()
  mes=list()
  fecha3=list()
@@ -73,7 +73,7 @@ def pregunta_04(datos):
 pass
 
 #Pregunta 5
-def pregunta_05(datos):
+def pregunta_05():
  out=list()
  letras=list()
  
@@ -96,7 +96,7 @@ pass
 
 
 #pregunta_06
-def pregunta_06(datos):
+def pregunta_06():
  out=[]
  out_aux=[]
  clave=[]
@@ -128,7 +128,7 @@ def pregunta_06(datos):
 pass
 
 #Pregunta_07
-def pregunta_07(datos):
+def pregunta_07():
  numeros=[]
  out=[]
  for fila in datos:
@@ -149,7 +149,7 @@ def pregunta_07(datos):
 pass
 
 #Pregunta_08
-def pregunta_08(datos):
+def pregunta_08():
  numeros=[]
  out=[]
  x=0
@@ -171,7 +171,7 @@ def pregunta_08(datos):
 pass
 
 #pregunta_09
-def pregunta_09(datos):
+def pregunta_09():
  out=[]
  out_aux=[]
  clave=[]
@@ -199,7 +199,7 @@ def pregunta_09(datos):
 pass
 
 #pregunta_10
-def pregunta_10(datos):
+def pregunta_10():
  out=[]
  iniciales=[]
  letras=[]
@@ -219,7 +219,7 @@ def pregunta_10(datos):
 pass
 
 #pregunta_11
-def pregunta_11(datos):
+def pregunta_11():
  out={}
  letras_grupo=[]
  letras_ind=[]
@@ -249,7 +249,7 @@ def pregunta_11(datos):
 pass
 
 #pregunta_12
-def pregunta_12(datos):
+def pregunta_12():
  out={}
  letras=[]
  clave=[]
