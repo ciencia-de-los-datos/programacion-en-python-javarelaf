@@ -9,9 +9,9 @@ from functools import reduce
 #importar datos
 f=open('data.csv',"r")
 reader=csv.reader(f,delimiter=";")
-data=list()
+datos=list()
 for fila in reader:
-    data.append(fila)
+    datos.append(fila)
 
 #Pregunta 1
 def pregunta_01(datos):
