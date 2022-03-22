@@ -74,7 +74,7 @@ pass
 #pregunta_04
 def pregunta_04():
  f=open('data.csv',"r")
- reader=csv.reader(f,delimiter=";")
+ reader=csv.reader(f,delimiter="\t")
  datos=list()
  for fila in reader:
       datos.append(fila)
@@ -101,7 +101,7 @@ pass
 #Pregunta 5
 def pregunta_05():
  f=open('data.csv',"r")
- reader=csv.reader(f,delimiter=";")
+ reader=csv.reader(f,delimiter="\t")
  datos=list()
  for fila in reader:
       datos.append(fila)
@@ -130,7 +130,7 @@ pass
 #pregunta_06
 def pregunta_06():
  f=open('data.csv',"r")
- reader=csv.reader(f,delimiter=";")
+ reader=csv.reader(f,delimiter="\t")
  datos=list()
  for fila in reader:
       datos.append(fila)
@@ -168,7 +168,7 @@ pass
 #Pregunta_07
 def pregunta_07():
  f=open('data.csv',"r")
- reader=csv.reader(f,delimiter=";")
+ reader=csv.reader(f,delimiter="\t")
  datos=list()
  for fila in reader:
       datos.append(fila)
@@ -195,7 +195,7 @@ pass
 #Pregunta_08
 def pregunta_08():
  f=open('data.csv',"r")
- reader=csv.reader(f,delimiter=";")
+ reader=csv.reader(f,delimiter="\t")
  datos=list()
  for fila in reader:
       datos.append(fila)
@@ -223,7 +223,7 @@ pass
 #pregunta_09
 def pregunta_09():
  f=open('data.csv',"r")
- reader=csv.reader(f,delimiter=";")
+ reader=csv.reader(f,delimiter="\t")
  datos=list()
  for fila in reader:
       datos.append(fila)
@@ -257,7 +257,7 @@ pass
 #pregunta_10
 def pregunta_10():
  f=open('data.csv',"r")
- reader=csv.reader(f,delimiter=";")
+ reader=csv.reader(f,delimiter="\t")
  datos=list()
  for fila in reader:
       datos.append(fila)
@@ -283,7 +283,7 @@ pass
 #pregunta_11
 def pregunta_11():
  f=open('data.csv',"r")
- reader=csv.reader(f,delimiter=";")
+ reader=csv.reader(f,delimiter="\t")
  datos=list()
  for fila in reader:
       datos.append(fila)
@@ -319,7 +319,7 @@ pass
 #pregunta_12
 def pregunta_12():
  f=open('data.csv',"r")
- reader=csv.reader(f,delimiter=";")
+ reader=csv.reader(f,delimiter="\t")
  datos=list()
  for fila in reader:
       datos.append(fila)
