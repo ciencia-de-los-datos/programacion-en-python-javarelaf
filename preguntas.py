@@ -176,14 +176,14 @@ def pregunta_07():
  numeros=[]
  out=[]
  for fila in datos:
-     numeros.append(fila[1])
+     numeros.append(int(fila[1]))
  set_numeros=set(numeros)
  unique_numeros=(list(set_numeros))
  unique_numeros.sort()
  for numero in unique_numeros:
   letras=[]
   for fila in datos:
-      if numero == fila[1]:
+      if numero == int(fila[1]):
          letras.append(fila[0])
          
   out.append((numero,letras))
@@ -202,16 +202,15 @@ def pregunta_08():
  #
  numeros=[]
  out=[]
- x=0
  for fila in datos:
-     numeros.append(fila[1])
+     numeros.append(int(fila[1]))
  set_numeros=set(numeros)
  unique_numeros=(list(set_numeros))
  unique_numeros.sort()
  for numero in unique_numeros:
   letras=[]
   for fila in datos:
-        if (numero == fila[1]) & (fila[0] not in letras):
+        if (numero == int(fila[1])) & (fila[0] not in letras):
          letras.append(fila[0])
          letras.sort()
   out.append((numero,letras))
@@ -228,28 +227,24 @@ def pregunta_09():
  for fila in reader:
       datos.append(fila)
  #
- out=[]
+ out={}
  out_aux=[]
  clave=[]
  
-
  for fila in datos:
      claves=fila[4].split(',')
      clave=claves+clave
-
  for objeto in clave:
      pair=objeto.split(':')
      out_aux.append(pair[0])
-
  out_aux_set=(list(set(out_aux)))
  out_aux_set.sort()
-
  for letras in out_aux_set:
      count=0
      for letra in out_aux:
          if letras == letra:
              count=count+1
-     out.append((letras,count))
+     out[letras]=count
  
  return out
 pass
