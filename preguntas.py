@@ -8,32 +8,51 @@ from functools import reduce
 
 #importar datos
 f=open('data.csv',"r")
-reader=csv.reader(f,delimiter=";")
+reader=csv.reader(f,delimiter="\t")
 datos=list()
 for fila in reader:
     datos.append(fila)
 
 #Pregunta 1
 def pregunta_01():
+ f=open('data.csv',"r")
+ reader=csv.reader(f,delimiter="\t")
+ datos=list()
+ for fila in reader:
+    datos.append(fila)
+ # 
  suma=0
  for fila in datos:
     suma=suma+int(fila[1])
-
+ suma
  return suma
-pass
+
 
 #Pregunta_02
 def pregunta_02():
+ f=open('data.csv',"r")
+ reader=csv.reader(f,delimiter="\t")
+ datos=list()
+ for fila in reader:
+    datos.append(fila)
+ #
  datos.sort(key=itemgetter(0),reverse=False)
  letras=list()
  for fila in datos:
   letras.append(fila[0])
  count=Counter(letras)
- return list(count.items())
+ c=list(count.items())
+ return c
 pass
 
 #pregunta_03 - rapido
 def  pregunta_03():
+ f=open('data.csv',"r")
+ reader=csv.reader(f,delimiter="\t")
+ datos=list()
+ for fila in reader:
+  datos.append(fila)
+ #
  out=list()
  letras=list()
  for fila in datos:
@@ -49,11 +68,15 @@ def  pregunta_03():
     out.append((letra,suma))
  
  return out
-
 pass
+
 
 #pregunta_04
 def pregunta_04():
+ f=open('data.csv',"r")
+ reader=csv.reader(f,delimiter=";")
+ datos=list()
+ #
  fechas=list()
  mes=list()
  fecha3=list()
@@ -67,13 +90,18 @@ def pregunta_04():
   mes.append(fecha[1])
  
  mes.sort(reverse=False)
- count = Counter(mes)
- return count
+ 
+ 
+ return list(Counter(mes).items())
 
 pass
 
 #Pregunta 5
 def pregunta_05():
+ f=open('data.csv',"r")
+ reader=csv.reader(f,delimiter=";")
+ datos=list()
+ #
  out=list()
  letras=list()
  
@@ -97,6 +125,10 @@ pass
 
 #pregunta_06
 def pregunta_06():
+ f=open('data.csv',"r")
+ reader=csv.reader(f,delimiter=";")
+ datos=list()
+ #
  out=[]
  out_aux=[]
  clave=[]
@@ -129,6 +161,10 @@ pass
 
 #Pregunta_07
 def pregunta_07():
+ f=open('data.csv',"r")
+ reader=csv.reader(f,delimiter=";")
+ datos=list()
+ #
  numeros=[]
  out=[]
  for fila in datos:
@@ -150,6 +186,10 @@ pass
 
 #Pregunta_08
 def pregunta_08():
+ f=open('data.csv',"r")
+ reader=csv.reader(f,delimiter=";")
+ datos=list()
+ #
  numeros=[]
  out=[]
  x=0
@@ -172,6 +212,10 @@ pass
 
 #pregunta_09
 def pregunta_09():
+ f=open('data.csv',"r")
+ reader=csv.reader(f,delimiter=";")
+ datos=list()
+ #
  out=[]
  out_aux=[]
  clave=[]
@@ -200,6 +244,10 @@ pass
 
 #pregunta_10
 def pregunta_10():
+ f=open('data.csv',"r")
+ reader=csv.reader(f,delimiter=";")
+ datos=list()
+ #
  out=[]
  iniciales=[]
  letras=[]
@@ -220,6 +268,10 @@ pass
 
 #pregunta_11
 def pregunta_11():
+ f=open('data.csv',"r")
+ reader=csv.reader(f,delimiter=";")
+ datos=list()
+ #
  out={}
  letras_grupo=[]
  letras_ind=[]
@@ -250,6 +302,10 @@ pass
 
 #pregunta_12
 def pregunta_12():
+ f=open('data.csv',"r")
+ reader=csv.reader(f,delimiter=";")
+ datos=list()
+ #
  out={}
  letras=[]
  clave=[]
