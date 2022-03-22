@@ -76,6 +76,8 @@ def pregunta_04():
  f=open('data.csv',"r")
  reader=csv.reader(f,delimiter=";")
  datos=list()
+ for fila in reader:
+      datos.append(fila)
  #
  fechas=list()
  mes=list()
@@ -101,6 +103,8 @@ def pregunta_05():
  f=open('data.csv',"r")
  reader=csv.reader(f,delimiter=";")
  datos=list()
+ for fila in reader:
+      datos.append(fila)
  #
  out=list()
  letras=list()
@@ -128,6 +132,8 @@ def pregunta_06():
  f=open('data.csv',"r")
  reader=csv.reader(f,delimiter=";")
  datos=list()
+ for fila in reader:
+      datos.append(fila)
  #
  out=[]
  out_aux=[]
@@ -164,6 +170,8 @@ def pregunta_07():
  f=open('data.csv',"r")
  reader=csv.reader(f,delimiter=";")
  datos=list()
+ for fila in reader:
+      datos.append(fila)
  #
  numeros=[]
  out=[]
@@ -189,6 +197,8 @@ def pregunta_08():
  f=open('data.csv',"r")
  reader=csv.reader(f,delimiter=";")
  datos=list()
+ for fila in reader:
+      datos.append(fila)
  #
  numeros=[]
  out=[]
@@ -215,6 +225,8 @@ def pregunta_09():
  f=open('data.csv',"r")
  reader=csv.reader(f,delimiter=";")
  datos=list()
+ for fila in reader:
+      datos.append(fila)
  #
  out=[]
  out_aux=[]
@@ -247,6 +259,8 @@ def pregunta_10():
  f=open('data.csv',"r")
  reader=csv.reader(f,delimiter=";")
  datos=list()
+ for fila in reader:
+      datos.append(fila)
  #
  out=[]
  iniciales=[]
@@ -271,6 +285,8 @@ def pregunta_11():
  f=open('data.csv',"r")
  reader=csv.reader(f,delimiter=";")
  datos=list()
+ for fila in reader:
+      datos.append(fila)
  #
  out={}
  letras_grupo=[]
@@ -305,6 +321,8 @@ def pregunta_12():
  f=open('data.csv',"r")
  reader=csv.reader(f,delimiter=";")
  datos=list()
+ for fila in reader:
+      datos.append(fila)
  #
  out={}
  letras=[]
